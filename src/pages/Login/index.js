@@ -24,6 +24,7 @@ const Login = ()=>{
                 <Form onFinish={onFinish} validateTrigger="onBlur">
                     <Form.Item
                     name="mobile"
+                    initialValue="13800000002"
                     rules={[
                         {required: true, message: '请输入手机号'},
                         {pattern: /^1[3-9]\d{9}$/, message: '手机号码格式不对'}
@@ -33,6 +34,7 @@ const Login = ()=>{
                     </Form.Item>
                     <Form.Item
                     name="code"
+                    initialValue="246810"
                     rules={[
                         {required: true, message: '请输入验证码'}
                     ]}
